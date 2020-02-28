@@ -1,6 +1,10 @@
-# Reverse Shell Generator: rsgen.sh
+# Reverse Shell Generator - rsgen.sh
 
-rsgen is a tool to generate an one line reverse shell and launch a nc listener.
+rsgen is a tool to generate an one line reverse shell grabbing the IP of your interface and a given port.
+
+## Motivation
+
+Learn some BASH scripting!
 
 ## Usage
 
@@ -16,7 +20,7 @@ rsgen is a tool to generate an one line reverse shell and launch a nc listener.
 
 [+] SHELLS:
 
-	-a --all : Diplay all reverse shell except OpenSSL
+	-a --all : Diplay all reverse tcp shells
 	-x --php : PHP reverse shell
 	-P --python : python reverse shell
 	--ps --powershell : Powershell reverse shell
@@ -24,13 +28,13 @@ rsgen is a tool to generate an one line reverse shell and launch a nc listener.
    		--tcp : TCP reverse shell
    		--udp : UDP reverse shell
 	-S --socat : Socat reverse shell
-	-l --perl : Perl reverse shell  (-l for larry Wall)
+	-l --perl : Perl reverse shell 
 	-r --ruby : Ruby reverse shell
 	-g --go : Golang: Reverse shell
 	-n --nc : Netcat reverse shell
 	-N --nc-bsd : Netcat open BSD reverse shell
 	-C --ncat : Ncat reverse  shell
-	-O --open-ssl : Creates a self signed certificate and lauch a nc listener, OpenSSL reverse shell
+	-O --open-ssl : OpenSSL reverse shell
 	-A --awk : AWK reverse shell
 	-j --java : Java reverse shell
 	-w --war : WAR reverse shell
@@ -52,16 +56,15 @@ rsgen is a tool to generate an one line reverse shell and launch a nc listener.
 
 ## Install
 
-If you want:
+If you want
 
 ```
+git clone https://github.com/darn0b/rsgen/
 ln -s $(pwd)/rsgen.sh /some/dir/in/PATH
 ```
 
 ## Todo
 
-Add more reverse shells
-URL encode feature
-Copy the command to the clipboard
+Add more reverse shells, URL encode feature, Copy the command to the clipboard and more
 
 
